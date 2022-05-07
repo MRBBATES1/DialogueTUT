@@ -1,0 +1,48 @@
+﻿# GENERIC BUTTONS
+
+dialogue.button.next=Next
+dialogue.button.okay=Okay
+dialogue.button.previous=Previous
+dialogue.button.finished=Complete
+dialogue.button.go=Get Food
+dialogue.button.food=Give Food
+dialogue.button.forgive=Forgive me....
+dialogue.button.follow=Follow me....
+dialogue.button.letmein=Let Me In
+
+# INTRO NPC
+
+dialogue.intro_book.name=Tutorial NPC
+dialogue.intro_book.0.body=Before time began...for 1.17, %sThere was no such thing as dialogues.
+dialogue.intro_book.1.body=And yet now!! %sHere we are, cycling through a dialogue system.
+dialogue.intro_book.2.body=No more do you need to stack loads of NPCs somewhere %sNo more will you have to tp as a replacement.
+dialogue.intro_book.3.body=And do you know what else is cool? %sI can do all sorts of cool things. %sGo one, click Complete to see.
+
+# THE KING
+# Q1
+
+king.dialogue.name=King Edward
+king.dialogue.q1.0.body=Pheasant!! %sHow dare you talk to me!!! %sDo i know you?
+king.dialogue.q1.1.body=Hello, it is I; %sI have come to see you from a far!
+king.dialogue.q1.2.body=Ah, good fetch me a golden apple will you, %sThats a good chap.
+king.dialogue.q1.3.body=Your back!, did you get my apple?
+king.dialogue.q1.4.body=Amazing thank you!! %sWhat did you say your name was again? %sWell thank you once again. as a thank you why not take a tour around the castle
+
+# MAIDEN
+# Q1
+
+maiden.dialogue.name=Lady Caroline
+maiden.dialogue.q1.1.body=Hmm,%sYou do know its rude to visit a lady in her chambers without being invited right?
+maiden.dialogue.q1.2.body=Forgive me my lady, i just had to seek you out %sand get to know you more.
+maiden.dialogue.q1.3.body=Well i say, %ssuch crazy behaviour!! %sbut okay, lets go for a walk.
+maiden.dialogue.q1.4.body=This was very nice, thank you. %sIts nice having this open space right next to the bedroom. %sIts easy to just come out here and stare at the stars.
+maiden.dialogue.q1.5.body=Thank you for the walk, %sWe should do it again sometime.
+
+
+# GUARD
+# Q1
+
+guard.dialogue.name=Guard
+guard.dialogue.q1.1.body=Hello, it is I; %sI am just looking around, The king said it was okay for a tour.
+guard.dialogue.q1.2.body=Hmm, %sYes he did mention something about you before. The levers to the jail cell is just to the side, carefull though first level sticks abit.
+guard.dialogue.q1.3.body=Never heard of ya!!! %sGo one on ya bike son!!
