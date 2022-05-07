@@ -11,7 +11,9 @@ This is the Dialogue addon i created to show case the new dialogue feature that 
 The NPCs used in the showcase was custom built using the following Skins:
 
 https://www.minecraftskins.com/skin/18553001/the-wizard-knights-teachers/
+
 https://www.minecraftskins.com/skin/11120208/purple-maiden/
+
 https://www.minecraftskins.com/skin/18609818/king-a/
 
 __Featured In:__
