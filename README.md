@@ -16,6 +16,8 @@ https://www.minecraftskins.com/skin/11120208/purple-maiden/
 
 https://www.minecraftskins.com/skin/18609818/king-a/
 
+Files with the .bbmodel can be opened in the free software available on https://www.blockbench.net/
+
 __Featured In:__
 
 [How To use the dialogue feature in Minecraft Bedrock Edition / MCPE / SWITCH / XBOX AND PlayStation](https://youtu.be/4Yic2aTv0vE)
