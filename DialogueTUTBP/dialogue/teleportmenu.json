@@ -1,0 +1,38 @@
+{
+  "format_version": "1.17",
+  "minecraft:npc_dialogue": {
+    "scenes": [
+      {
+        "scene_tag": "main_teleport_menu",
+        "npc_name": "Teleport Menu",
+        "text": "Where would you like to go?",
+        "buttons": [
+          {
+            "name": "Gate House",
+            "commands": [
+              "/tp @initiator @e[name=GateHouse]"
+            ]
+          },
+          {
+            "name": "Kings Throne",
+            "commands": [
+              "/tp @initiator @e[name=KingRoom]"
+            ]
+          },
+          {
+            "name": "Madiens Chambers",
+            "commands": [
+              "/tp @initiator @e[name=MadienRoom]"
+            ]
+          },
+          {
+            "name": "Jail Cells",
+            "commands": [
+              "/tp @initiator @e[name=GuardRoom]"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

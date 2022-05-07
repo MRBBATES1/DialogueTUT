@@ -1,0 +1,77 @@
+{
+	"format_version": "1.17",
+	"minecraft:npc_dialogue":
+	{
+		"scenes":
+		[
+			{
+				"scene_tag": "king_q1.0",
+				"npc_name": { "rawtext": [ { "translate": "king.dialogue.name" } ] },
+				"text": {"rawtext":[{"translate":"king.dialogue.q1.0.body", "with": ["\n\n","\n\n"] }]},
+				"buttons": [
+					{
+						"name": "It is I...",
+						"commands": [
+							"dialogue open @s @initiator[tag=getfood] king_q1.2", 
+							"dialogue open @s @initiator[tag=food] king_q1.3",
+							"dialogue open @s @initiator[tag=q1complete] king_q1.4",
+							"dialogue open @initiator @initiator[tag=!getfood] king_q1.1"
+						]
+					}
+				]
+			},
+			{
+				"scene_tag": "king_q1.1",
+				"text": {"rawtext":[{"translate": "king.dialogue.q1.1.body", "with": ["\n\n"] }]},
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "translate": "dialogue.button.next" } ] },
+						"commands": [
+							"/dialogue open @e[name=King] @s king_q1.2"
+						]
+					}
+				]
+			},
+			{
+				"scene_tag": "king_q1.2",
+				"npc_name": { "rawtext": [ { "translate": "king.dialogue.name" } ] },
+				"text": { "rawtext": [ { "translate": "king.dialogue.q1.2.body", "with": ["\n\n"] }]},
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "translate": "dialogue.button.previous" } ] },
+						"commands": [
+							"/dialogue open @initiator @initiator king_q1.1"
+						]
+					},					
+					{
+						"name": { "rawtext": [ { "translate": "dialogue.button.go" } ] },
+						"commands": [
+							"/dialogue open @e[name=King] @initiator[tag=food] king_q1.3",
+							"/tag @initiator[tag=!getfood] add getfood"
+						]
+					}
+				]
+			},
+			{
+				"scene_tag": "king_q1.3",
+				"npc_name": { "rawtext": [ { "translate": "king.dialogue.name" } ] },
+				"text": { "rawtext": [ { "translate": "king.dialogue.q1.3.body", "with": ["\n\n"] }]},
+				"buttons": [				
+					{
+						"name": { "rawtext": [ { "translate": "dialogue.button.food" } ] },
+						"commands": [
+							"/clear @initiator golden_apple 0 1",
+							"/tag @initiator add q1complete",
+							"/dialogue open @e[name=King] @initiator[tag=q1complete] king_q1.4"
+						]
+					}
+				]
+			},			
+			{
+				"scene_tag": "king_q1.4",
+				"npc_name": { "rawtext": [ { "translate": "king.dialogue.name" } ] },
+				"text": { "rawtext": [ { "translate": "king.dialogue.q1.4.body", "with": ["\n\n","\n\n"] }]}
+			}
+		]
+	}
+}

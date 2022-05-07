@@ -1,0 +1,135 @@
+{
+	"format_version": "1.17",
+	"minecraft:npc_dialogue":
+	{
+		"scenes":
+		[
+						{
+				"scene_tag": "placeholder",
+				"npc_name": "Tutorial NPC",
+				"text": "I am just the place holder, the one that makes it all happen.... \n\nwell maybe not, but lets begin anyways!!",
+				"buttons": [
+					{
+						"name": "Start",
+						"commands": [
+							"/dialogue open @s @initiator intro_book0_local"
+						]
+					}
+				],
+				"on_close_commands": [
+				]
+			},
+			{
+				"scene_tag": "intro_book0_local",
+				"npc_name": "Tutorial NPC",
+				"text": "Before time began...for 1.17. \n\nThere was no such thing as dialogues; And yet now!! \n\nHere we are, cycling through a dialogue system.",
+				"buttons": [
+					{
+						"name": "Next",
+						"commands": [
+							"/dialogue open @s @initiator intro_book1_local"
+						]
+					}
+				],
+				"on_close_commands": [
+				]
+			},
+			{
+				"scene_tag": "intro_book1_local",
+				"npc_name": "Tutorial NPC",
+				"text": "With the use of dialogues, you can create any number of possible scenarios.\n\nThis is achieved by the use of scenes. \n\nThe scene file is a json file located inside the dialogue folder in the root directory of the active behavior pack",
+				"buttons": [
+					{
+						"name": "Previous",
+						"commands": [
+							"/dialogue open @s @initiator intro_book0_local"
+						]
+					},					
+					{
+						"name": "Next",
+						"commands": [
+							"/dialogue open @s @initiator intro_book2_local"
+						]
+					}
+				],
+				"on_close_commands": [
+				]
+			},
+			{
+				"scene_tag": "intro_book2_local",
+				"npc_name": "Tutorial NPC",
+				"text": "For the first time on bedorck edition we can create interactive play with direct user targeting!!. \n\nWith the new @initiator selector, you now have pin point accuracy when running commands against players.",
+				"buttons": [
+					{
+						"name": "Previous",
+						"commands": [
+							"/dialogue open @s @initiator intro_book1_local"
+						]
+					},					
+					{
+						"name": "Next",
+						"commands": [
+							"/dialogue open @s @initiator intro_book3_local"
+						]
+					}
+				],
+				"on_close_commands": [
+					
+				]
+			},
+			{
+				"scene_tag": "intro_book3_local",
+				"npc_name": "Tutorial NPC",
+				"text": "Want to see an example of this?, I'm sure you do.!! \n\nJust click complete to find out!",
+				"buttons": [
+					{
+						"name": "Previous",
+						"commands": [
+							"/dialogue open @s @initiator intro_book2_local"
+						]
+					},					
+					{
+						"name": "Complete",
+						"commands": [
+							"/give @initiator apple 1",
+							"/say Here have an apple!"
+						]
+					}
+				],
+				"on_close_commands": [
+					
+				]
+			},
+			{
+				"scene_tag": "intro_book4_local",
+				"npc_name": "Tutorial NPC",
+				"text": "I am just the place holder, the one that makes it all happen.... \n\nwell maybe not, but lets begin anyways!!",
+				"buttons": [
+					{
+						"name": "Start",
+						"commands": [
+							"/dialogue open @s @initiator intro_book0_local"
+						]
+					}
+				]
+			},
+			{
+				"scene_tag": "intro_book5_local",
+				"npc_name": "Tutorial NPC",
+				"text": "You used the change command didnt you? Well guess what!! your stuck now becuase theres no going back!! \n\nHahahaha the look on your face!, Seriously though just click the button below to Un do it!.",
+				"buttons": [
+					{
+						"name": "Undo",
+						"commands": [
+							"/dialogue change @s intro_book4_local @initiator"
+						]
+					}
+				]
+			},
+			{
+				"scene_tag": "intro_book6_local",
+				"text": "....."
+			}
+		]
+	}
+}

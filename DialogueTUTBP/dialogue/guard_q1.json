@@ -1,0 +1,46 @@
+{
+	"format_version": "1.17",
+	"minecraft:npc_dialogue":
+	{
+		"scenes":
+		[
+			{
+				"scene_tag": "guard_q1.1",
+				"text": {"rawtext":[{"translate":"guard.dialogue.q1.1.body","with": ["\n\n"] } ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "translate": "dialogue.button.next" } ] },
+						"commands": [
+							"/dialogue open @e[name=Guard] @initiator guard_q1.2"
+						]
+					}
+				]
+			},
+			{
+				"scene_tag": "guard_q1.2",
+				"npc_name": { "rawtext": [ { "translate": "guard.dialogue.name" } ] },
+				"text": { "rawtext": [ { "translate": "guard.dialogue.q1.2.body", "with": ["\n\n"] } ] },
+				"buttons": [
+										{
+						"name": { "rawtext": [ { "translate": "dialogue.button.previous" } ] },
+						"commands": [
+							"/dialogue open @initiator @initiator guard_q1.1"
+						]
+					},
+					{
+						"name": { "rawtext": [ { "translate": "dialogue.button.letmein" } ] },
+						"commands": [
+							"/tp @s -398 65 -263"
+							
+						]
+					}
+				]
+			},
+			{
+				"scene_tag": "guard_q1.3",
+				"npc_name": { "rawtext": [ { "translate": "guard.dialogue.name" } ] },
+				"text": { "rawtext": [ { "translate": "guard.dialogue.q1.3.body", "with": ["\n\n"] } ] }
+			}
+		]
+	}
+}

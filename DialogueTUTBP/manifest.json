@@ -1,0 +1,18 @@
+{
+   "format_version" : 2,
+   "header" : {
+      "description" : "DialogueTUT by MRBBATES1",
+      "name" : "DialogueTUT",
+      "uuid" : "b730a401-3da0-4422-986f-69f595953f14",
+      "version" : [ 0, 0, 1 ],
+	  "min_engine_version": [ 1, 17, 0 ]
+   },
+   "modules" : [
+      {
+         "description" : "DialogueTUT by MRBBATES1",
+         "type" : "data",
+         "uuid" : "658e217a-301b-427f-b059-dc347fbf30f0",
+         "version" : [ 0, 0, 1 ]
+      }
+   ]
+}

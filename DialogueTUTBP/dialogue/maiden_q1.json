@@ -1,0 +1,77 @@
+{
+	"format_version": "1.17",
+	"minecraft:npc_dialogue":
+	{
+		"scenes":
+		[
+			{
+				"scene_tag": "maiden_q1.1",
+				"text": {"rawtext":[{"translate":"maiden.dialogue.q1.1.body","with": ["\n\n"] } ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "translate": "dialogue.button.forgive" } ] },
+						"commands": [
+							"/dialogue open @initiator @initiator maiden_q1.2"
+						]
+					}
+				],
+				"on_close_commands": [
+				]
+			},
+			{
+				"scene_tag": "maiden_q1.2",
+				"text": { "rawtext": [ { "translate": "maiden.dialogue.q1.2.body", "with": ["\n\n"] } ] },
+				"buttons": [			
+					{
+						"name": { "rawtext": [ { "translate": "dialogue.button.next" } ] },
+						"commands": [
+							"/dialogue open @e[name=Maiden] @initiator maiden_q1.3"
+							
+						]
+					}
+				],
+				"on_close_commands": [
+				]
+			},
+			{
+				"scene_tag": "maiden_q1.3",
+				"npc_name": { "rawtext": [ { "translate": "maiden.dialogue.name" } ] },
+				"text": { "rawtext": [ { "translate": "maiden.dialogue.q1.3.body", "with": ["\n\n"] } ] },
+				"buttons": [	
+					{
+						"name": { "rawtext": [ { "translate": "dialogue.button.previous" } ] },
+						"commands": [
+							"/dialogue open @initiator @initiator maiden_q1.2"
+						]
+					},
+					{
+						"name": { "rawtext": [ { "translate": "dialogue.button.follow" } ] },
+						"commands": [
+							"/setblock -402 84 -266 redstone_block",
+							"/setblock -394 105 -288 redstone_block"
+						]
+					}
+				],
+				"on_close_commands": [
+					
+				]
+			},			
+			{
+				"scene_tag": "maiden_q1.4",
+				"npc_name": { "rawtext": [ { "translate": "maiden.dialogue.name" } ] },
+				"text": { "rawtext": [ { "translate": "maiden.dialogue.q1.4.body", "with": ["\n\n"] } ] },
+				"on_close_commands": [
+							"/setblock -402 84 -266 air 0 replace",
+							"/setblock -394 105 -288 air 0 replace",
+							"/tp @e[name=Maiden] -389 86 -289",
+							"tag @initiator[tag=!mq1complete] add mq1complete"
+				]
+			},
+			{
+				"scene_tag": "maiden_q1.5",
+				"npc_name": { "rawtext": [ { "translate": "maiden.dialogue.name" } ] },
+				"text": { "rawtext": [ { "translate": "maiden.dialogue.q1.5.body", "with": ["\n\n"] } ] }
+			}
+		]
+	}
+}
